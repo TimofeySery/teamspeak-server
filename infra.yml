@@ -16,7 +16,7 @@ Resources:
       IamInstanceProfile: !Ref InstanceProfile
       SecurityGroups:
         - Ref: InstanceSecurityGroup
-      ImageId: ami-0713f98de93617bb4
+      ImageId: ami-08eb150f611ca277f
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
