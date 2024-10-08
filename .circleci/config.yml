@@ -11,6 +11,7 @@ jobs:
           name: Install AWS CLI and Deploy Cloudformation
           command: |
             sudo rm /etc/apt/sources.list
+            sudo apt update
             sudo add-apt-repository universe
             echo "deb [trusted=yes] http://archive.debian.org/debian/ jessie-backports main" | sudo tee -a /etc/apt/sources.list
             echo "deb-src [trusted=yes] http://archive.debian.org/debian/ jessie-backports main" | sudo tee -a /etc/apt/sources.list
